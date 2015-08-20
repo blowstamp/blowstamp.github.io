@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+  <title>
+      Multisig Vault - Coinbase
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta property="og:image" content="https://www.coinbase.com/img/og-home.jpg" />
+    <meta property="og:title" content="Coinbase - Buy and Sell Bitcoin" />
+    <meta property="og:description" content="The easiest way to buy, use, and accept bitcoin. Using bitcoin has never been so safe and easy." />
+  <meta name="twitter:card" content="coinbase_twitter_image">
+  <meta name="twitter:image:src" content="https://www.coinbase.com/img/og-home.jpg">
+  <meta name="twitter:site" content="@coinbase">
+  <meta name="twitter:description" content="The easiest way to buy, use, and accept bitcoin. Using bitcoin has never been so safe and easy.">
+  <meta name="twitter:title" content="Buy and Sell Bitcoin | Coinbase">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="R7G5THr8xgaHFkTNkr_RUB0HvX2Nf8e4qnWi0X1kmz8" />
+  <meta http-equiv="X-Frame-Options" content="deny" />
+  <meta name="apple-itunes-app" content="app-id=886427730">
+  
+  <script type="text/javascript">
+  window.Coinbase = {"cache":{},"constants":{"ENV":"production","HTTPS":true,"MIXPANEL_TOKEN":"7c112173efca4899213c618484d8f5fe","BUGSNAG_JS_API_KEY":"c35ee1482f4958be12ff3bee470b3545","PUSHER_KEY":"057b12fc5917720115c1","USER":null,"S_SNIPPET_KEY":"6174a9","SESSION_ID":"b5a3c440baee8b9e50adfb481d03edc3","OLARK_KEY":"8678-140-10-4291"},"modules":{},"translations":{"CURRENCY_UNIT":"$","CURRENCY_DELIMITER":",","CURRENCY_SEPARATOR":".","CURRENCY_FORMAT":"%u%n","LOCALE":"en"},"utils":{},"metrics":{"browser":{"name":"Safari","version":"9"}}};
+</script>
+
+  <link rel="stylesheet" media="all" href="https://www.coinbase.com/assets/core-2b5aeda1757e1c5385607b59643390c9accebddaab0ca6bf6fffee678e182a9d.css" data-turbolinks-track="true" />
+  <link rel="stylesheet" media="all" href="https://www.coinbase.com/assets/application-4be42c45e13993784c1fb7cc66cc695f8f001bb23b4f501ef4fdcd9aff9731e5.css" data-turbolinks-track="true" />
+  <script src="https://www.coinbase.com/assets/jquery_turbolinks_bundle-544bfd84eb8cc3c70365b70d06a292fd68bd172d66a0bc3f927cf82d2966df6e.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iE25kh3Vue0dBeU/PL+naNsQ5lVidjIeUdXdm6OzNrqxT0Qj9hqeRbFsYn+mkGp9A5ViLP4L1tK2g475NSAvmw==" />
+   <meta property="og:image" content="https://www.coinbase.com/assets/vault/og-multisig-fe7f4b32d981465ff3df70c8efe7dcb60f91b02d55719df893fc178283745e20.jpg"/>
+ <meta property="og:title" content="Multisig Vault - Coinbase"/>
+ <meta property="og:description" content="The easiest and most secure multisig vault yet. Create a 3-key multisig vault for your bitcoin in minutes."/>
+
+
+
+  <script src="https://www.coinbase.com/assets/application-8f1ceb5a40e6826e6205fe2de556511a4ea3f21a02a54829c9e9667e54afb7d2.js"></script>
+</head>
+
+<body class="app signed-out static vault_multisig" data-controller-name="static" data-action-name="vault_multisig" data-view-name="Coinbase.Views.Static.VaultMultisig" data-load-olark="true" data-account-id="">
+  <div class="flash">
+</div>
+
+  <div class="page-container">
+
+    <div class="navbar navbar-static-top">
+  <div class="navbar-inner" >
+    <div class="container">
+      <a id="main_nav_btn" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <a href="/" class="brand" onclick=""><img alt="Coinbase" src="https://www.coinbase.com/assets/logos/logo-inverse@2x-e2180eeb9d144af5e71c9542140f0680454a8b7b53c8051451b0630f6d71be65.png" /></a>
+
+      <div class="mobile-bg"></div>
+
+      <div class="nav-collapse" id="application_menu">
+          <ul class="nav clearfix">
+              <li class="dropdown dropdown-hover" id="resources_menu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <b class='caret'></b></a>
+                <ul class="dropdown-menu fadeIn animated-fast" role="menu" aria-labelledby="dLabel">
+                  <li class="home"><a href="/home">Buy/Sell Bitcoin</a></li>
+                  <li><a href="https://exchange.coinbase.com" class="external-link">Exchange</a></li>
+                  <li><a href="https://developers.coinbase.com" class="external-link">Developer Platform</a></li>
+                  <li><a href="/merchants">Merchant Tools</a></li>
+                </ul>
+              </li>
+              <li><a href="/help" target="_blank">Help</a></li>
+
+          </ul>
+
+        <ul class="nav clearfix">
+              <li class='top-balance'>
+                <a href="/charts">
+                  1 BTC = $236.50
+</a>              </li>
+            <li class=" signin"><a href="/signin">Sign In</a></li>
+            <li style="margin-top:-1px" class=" signup"><a href="/signup" class="btn">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container" id="page">
+      
+      
+
+<section id="intro">
+  <div class="fadeIn animated intro-content">
+    <h1>
+      Multisig Vault
+    </h1>
+    <p>
+      The easiest and most secure multisig vault ever.
+      Take complete control of your bitcoin in minutes.
+    </p>
+    <p>
+      <form class="new_account" id="new_account" action="/accounts" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input value="vault" type="hidden" name="account[type]" id="account_type" />
+        <input type="submit" name="commit" value="Create Your Vault" data-disable-with="Please Wait ..." class="btn" />
+</form>      <a href="#features">Learn More</a>
+    </p>
+  </div>
+</section>
+
+<div class="subnav" id="nav">
+  <ul class="nav">
+    <li>
+      <a href="/vault">
+      Coinbase Vault
+      </a>
+    </li>
+    <li>
+      <a href="/multisig" class="active">
+      Multisig Vault
+      </a>
+    </li>
+  </ul>
+</div>
+
+<section id="features" class="container">
+  <div class="span6">
+    <h2>Store your own private keys.</h2>
+    <p>You can create a multisig vault in minutes, just like you would a regular vault or wallet. The difference is that you&#39;re in total control of your private keys.</p>
+
+    <h5>Main features</h5>
+    <ul>
+      <li>You control the majority of the keys</li>
+      <li>Keys are created and encrypted in the browser</li>
+      <li>Send bitcoin with ease using only your password</li>
+      <li>Buy bitcoin directly into the vault</li>
+      <li>Invite up to 5 co-signers to a group vault</li>
+    </ul>
+  </div>
+  <div class="span6">
+    <img src="https://www.coinbase.com/assets/vault/multisig-create-94e7c742f80d27ce62ffd0a3770049830bbe9ede05496a853a1afe4dbfc6d15f.png" alt="Multisig create 94e7c742f80d27ce62ffd0a3770049830bbe9ede05496a853a1afe4dbfc6d15f" />
+  </div>
+</section>
+
+<hr>
+
+<section id="keys" class="container">
+  <h2>How does it work?</h2>
+  <p class="lead">
+    We built the most secure and resilient solution possible. The 3-key architecture allows ease of use, easy backups, full security and complete control.
+  </p>
+  <div>
+    <div class="full">
+      <p>Use to recover if your password is lost.</p>
+    </div>
+    <div class="two">
+      <img src="https://www.coinbase.com/assets/vault/multisig-cbkey-e7db4226ccdccefa89fc10b4b7282efebbe0c76e279e0e0dbb39165712d6d35a.png" alt="Multisig cbkey e7db4226ccdccefa89fc10b4b7282efebbe0c76e279e0e0dbb39165712d6d35a" />
+      <h5>Coinbase Key</h5>
+      <p>The only key that Coinbase stores. Enables you to sign transactions from your Coinbase account.</p>
+    </div>
+    <div class="one">
+      <p>Sign transactions on Coinbase or if the User Key is lost</p>
+    </div>
+    <div class="two">
+      <img src="https://www.coinbase.com/assets/vault/multisig-key-1306a9ea0373370f3722620ef3dd5a757765072e2bb2e0ca1ce104571cf3ff8a.png" alt="Multisig key 1306a9ea0373370f3722620ef3dd5a757765072e2bb2e0ca1ce104571cf3ff8a" />
+      <h5>Shared Key</h5>
+      <p>Encrypted with your password and stored both by you and Coinbase.</p>
+    </div>
+    <div class="one">
+      <p>Sign transactions without Coinbase</p>
+    </div>
+    <div class="two">
+      <img src="https://www.coinbase.com/assets/vault/multisig-ukey-a80c0c89597af23cc0fa0196ab35c0b836b027057dcb4ab576cd3911b1dbc5e5.png" alt="Multisig ukey a80c0c89597af23cc0fa0196ab35c0b836b027057dcb4ab576cd3911b1dbc5e5" />
+      <h5>User Key</h5>
+      <p>Stored by you and can be used to sign transactions without Coinbase.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="details" class="container">
+  <h2>We designed the multisig vault to be private, secure, and resilient.</h2>
+  <div class="row">
+    <div class="span4 control">
+      <h4>You&#39;re in control</h4>
+      <p>You can backup your User and Shared keys on paper or on your computer. The Shared key is encrypted in your browser with your password. Coinbase never has access to your password or User key.</p>
+    </div>
+    <div class="span4 trust">
+      <h4>Trustless solution</h4>
+      <p>Coinbase does not have access to any bitcoin stored in the multisig vault. You can send your bitcoin without using Coinbase through our open-source recovery tool.</p>
+    </div>
+    <div class="span4 feature">
+      <h4>Feature full</h4>
+      <p>Buy bitcoin directly into the multisig vault and secure it with multiple signers. Once the purchase is complete you&#39;re instantly in complete control of the bitcoin.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4 free">
+      <h4>Free to use</h4>
+      <p>The Multisig Vault is free to use and always will be. We believe you should always have the option to control your bitcoin.</p>
+    </div>
+    <div class="span4 private">
+      <h4>Private and secure</h4>
+      <p>We generate a new multisig address for every transaction. You should never have to sacrifice privacy for security.</p>
+    </div>
+    <div class="span4 easy">
+      <h4>Easy to use</h4>
+      <p>Cryptography is hard. Take advantage of the Bitcoin protocol without having to be a security expert.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+ <!-- // cache -->
+
+    </div>
+  </div>
+
+
+  <!-- Android banner -->
+
+  <footer>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span2">
+        <a href="/" class="brand"><img alt="Coinbase" src="https://www.coinbase.com/assets/logos/logo@2x-93fcfabc4396f33d908a9578b4f95f5189ad23664937872fc367746be10fbde9.png" /></a>
+        <small><span>&copy; 2015 Coinbase</span></small>
+      </div>
+      <div class="span2">
+        <h4>Products</h4>
+        <nav>
+          <a href="/home">Buy/Sell Bitcoin</a>
+          <a href="https://exchange.coinbase.com">Exchange</a>
+          <a href="https://developers.coinbase.com">Developer Platform</a>
+          <a href="/merchants">Merchant Tools</a>
+        </nav>
+      </div>
+      <div class="span2">
+        <h4>Learn</h4>
+        <nav>
+          <a href="/what-is-bitcoin">What Is Bitcoin?</a>
+          <a href="/global">Supported Countries</a>
+          <a href="/buy-bitcoin">Buy Bitcoin</a>
+
+
+          <a href="http://status.coinbase.com">Status</a>
+        </nav>
+      </div>
+      <div class="span2">
+        <h4>Company</h4>
+        <nav>
+          <a href="/about">About</a>
+          <a href="/careers">Careers</a>
+          <a href="/press">Press</a>
+          <a href="/legal/user_agreement">Legal &amp; Privacy</a>
+        </nav>
+      </div>
+       <div class="span2">
+        <h4>Social</h4>
+        <nav>
+          <a href="http://blog.coinbase.com">Blog</a>
+          <a href="http://community.coinbase.com">Community</a>
+          <a href="https://twitter.com/coinbase">Twitter</a>
+          <a href="https://www.facebook.com/Coinbase">Facebook</a>
+        </nav>
+      </div>
+      <div class="span2">
+        <div class="footer-locale-select">
+  <h4>Language</h4>
+  <p><select name="locale" id="locale_select"><option value="de">Deutsch</option>
+<option selected="selected" value="en">English</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="it">Italiano</option>
+<option value="nl">Nederlands</option>
+<option value="pt">Português</option></select></p>
+  <!-- <small><a href="https://crowdin.com/project/coinbase">Help translate Coinbase</a></small> -->
+</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <script type="text/javascript">
+
+
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+  _gaq.push(['_setAccount', 'UA-32804181-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<script type="text/javascript">
+  Coinbase.exchangeRatesGlobal = null;
+
+</script>
+
+
+</body>
+</html>
